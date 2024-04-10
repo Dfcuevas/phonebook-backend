@@ -6,6 +6,7 @@ const Person = require("./mongo");
 
 app.use(cors());
 
+// La siguiente linea de codigo hace que express muestre contenido estatico, la pagina index.html y el js, ext. Es un middleware integrado de express
 app.use(express.static("dist"));
 
 app.use(express.json());
